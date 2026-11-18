@@ -1,0 +1,78 @@
+:root {
+  color-scheme: dark;
+  --background: #161615;
+  --foreground: #fff;
+  --muted: #c9c9c6;
+  --accent: #e94845;
+  --line: #42423e;
+  --link: #ff918a;
+  --header: #1d1d1b;
+  --on-header: #fff;
+  font-family: system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--background); color: var(--foreground); line-height: 1.65; }
+.shell { width: min(1120px, 90%); margin-inline: auto; }
+a { color: inherit; text-underline-offset: .3em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.skip { position: absolute; left: 1rem; top: 1rem; z-index: 1; transform: translateY(-200%); background: var(--background); padding: .5rem; }
+.skip:focus { transform: none; }
+header { background: var(--header); color: var(--on-header); border-bottom: 3px solid var(--accent); }
+.mast { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 76px; }
+.logo { display: block; width: clamp(92px, 14vw, 136px); }
+.logo img { display: block; width: 100%; height: 58px; object-fit: contain; }
+nav { display: flex; align-items: center; gap: clamp(.8rem, 4vw, 2.5rem); }
+nav a { font-size: .94rem; text-decoration: none; }
+nav a:hover, nav [aria-current] { color: var(--link); text-decoration: underline; }
+header nav a:hover, header nav [aria-current] { color: var(--on-header); text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.hero { display: grid; grid-template-columns: 1.24fr 1fr; gap: 2rem; align-items: center; padding: clamp(3rem, 8vw, 7rem) 0; }
+.eyebrow { color: var(--link); font: 600 .79rem/1.5 ui-monospace, monospace; letter-spacing: .13em; margin: 0 0 1rem; }
+h1, h2 { margin: 0; line-height: 1.04; letter-spacing: -.06em; text-wrap: balance; }
+h1 { font-size: clamp(2.8rem, 6.2vw, 5.5rem); }
+h2 { font-size: clamp(1.65rem, 3.2vw, 2.85rem); }
+h1 span { color: var(--accent); }
+p { margin: 0 0 1rem; }
+.intro { color: var(--muted); max-width: 36rem; margin: 1.35rem 0; font-size: clamp(1.07rem, 2vw, 1.31rem); }
+.button { display: inline-block; background: var(--accent); color: #151513; padding: .65rem 1rem; border-radius: .25rem; font-weight: 720; text-decoration: none; }
+.button:hover { background: #f16966; }
+.split { border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; padding: clamp(1.75rem, 5vw, 3.5rem) 0; }
+.split p { color: var(--muted); }
+.split p:last-child { margin-bottom: 0; }
+.partners, .courses { list-style: none; padding: 0; margin: 0 0 1rem; }
+.partners li, .courses li { border-bottom: 1px solid var(--line); padding: .72rem 0; }
+.partners li:first-child, .courses li:first-child { padding-top: 0; }
+.partners p, .courses p { margin-top: .25rem; }
+.heading { padding: clamp(2.8rem, 7vw, 5rem) 0 2rem; }
+.jumps { flex-wrap: wrap; gap: .65rem 1.2rem; }
+.jumps a { text-decoration: underline; }
+footer { border-top: 1px solid var(--line); margin-top: 2rem; padding: 1.5rem 0 2.5rem; color: var(--muted); font-size: .89rem; }
+footer .shell { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; justify-content: space-between; }
+@media (max-width: 700px) {
+  .mast { flex-wrap: wrap; gap: 0 .9rem; padding-bottom: .5rem; }
+  .hero, .split { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+
+.hero-art { display: block; width: 100%; height: auto; border-radius: .3rem; }
+.partner-logos {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+  gap: 1.1rem;
+  margin: 1.5rem 0 0;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--line);
+}
+.partner-logos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .35rem;
+  min-height: 64px;
+  text-decoration: none;
+  isolation: isolate;
+}
+.partner-logos img { display: block; width: auto; max-width: 100%; max-height: 39px; filter: brightness(0) invert(1); }
+.partner-logos .ujm-logo { max-height: 58px; filter: grayscale(1) invert(1) contrast(4); mix-blend-mode: screen; }
+.partner-logos a:has(.ujm-logo) { background: var(--background); }
+.grame-logo img { max-width: 27px; }
+.grame-logo { font-size: .76rem; font-weight: 750; white-space: nowrap; }
