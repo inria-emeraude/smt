@@ -1595,7 +1595,11 @@ This course introduces the organizational, administrative, financial and strateg
 
 #### Introduction to TouchDesigner — 18 hours
 
-Introduction to the TouchDesigner programming environment (derivative.ca) dedicated to real-time image processing. The course will focus more specifically on the production of interactive content and its connection to gesture-based interfaces.
+The workshop takes place over two days. The first half-day is dedicated to discovering TouchDesigner, exploring its fundamentals, understanding its philosophy and getting familiar with its creative potential. The aim is to provide everyone with the basic knowledge needed to start experimenting with the software.
+
+The remaining time is devoted to a creative sprint, during which participants are invited to imagine, design and build an artistic prototype from scratch. Working in multidisciplinary teams composed of musicians and visual artists, they will begin by defining an artistic intention and exploring the meaning and purpose of their project. They will then combine their individual skills and creative perspectives, establish a technical rider and make the technological choices needed to bring their ideas to life. Throughout the process, participants will experiment, overcome technical challenges, solve problems and develop their creative ideas. The workshop will conclude with a presentation of their prototypes, giving each team the opportunity to share and discuss the artistic and technical choices behind their work with an audience.
+
+This two-day workshop offers a highly stimulating journey into collective creation. It is built around experimentation, learning by doing and learning from one another, giving participants the opportunity to explore new creative possibilities at the intersection of sound, image and technology.
 
 #### History and Theory of the Arts — 18 hours
 
